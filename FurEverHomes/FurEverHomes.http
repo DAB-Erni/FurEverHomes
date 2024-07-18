@@ -1,0 +1,6 @@
+@FurEverHomes_HostAddress = http://localhost:5195
+
+GET {{FurEverHomes_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
