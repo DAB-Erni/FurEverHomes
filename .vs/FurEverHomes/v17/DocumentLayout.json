@@ -3,40 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\controllers\\adopterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\controllers\\adopterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\data\\adoptiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\data\\adoptiondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\dto\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\dto\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\dto\\applicationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\dto\\applicationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\dto\\updateadopterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\dto\\updateadopterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\dto\\adoptersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\dto\\adoptersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\controllers\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\controllers\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\domain\\adopters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\domain\\adopters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\domain\\shelter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\domain\\shelter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\mappings\\dtomapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\mappings\\dtomapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\domain\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\domain\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\dto\\adoptersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\dto\\adoptersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\domain\\pets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\domain\\pets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\domain\\shelter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\domain\\shelter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\dto\\petdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\dto\\petdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|c:\\users\\boot camp\\downloads\\fureverhomes\\fureverhomes\\fureverhomes\\models\\dto\\shelterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83088AC1-079A-4D5B-879C-3325D0FA5EA3}|FurEverHomes\\FurEverHomes.csproj|solutionrelative:fureverhomes\\models\\dto\\shelterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,32 +60,6 @@
           "DockedWidth": 260,
           "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdoptionDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Data\\AdoptionDbContext.cs",
-              "RelativeDocumentMoniker": "FurEverHomes\\Data\\AdoptionDbContext.cs",
-              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Data\\AdoptionDbContext.cs",
-              "RelativeToolTip": "FurEverHomes\\Data\\AdoptionDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T09:27:46.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateAdopterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
-              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
-              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
-              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T09:13:12.736Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
@@ -92,65 +78,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdoptersController.cs",
-              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Controllers\\AdoptersController.cs",
-              "RelativeDocumentMoniker": "FurEverHomes\\Controllers\\AdoptersController.cs",
-              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Controllers\\AdoptersController.cs",
-              "RelativeToolTip": "FurEverHomes\\Controllers\\AdoptersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T06:35:06.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AdoptersDto.cs",
-              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
-              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
-              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
-              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Title": "UpdateAdopterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
+              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\UpdateAdopterDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T08:05:54.391Z",
+              "WhenOpened": "2024-07-19T09:34:53.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Adopters.cs",
-              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\Domain\\Adopters.cs",
-              "RelativeDocumentMoniker": "FurEverHomes\\Models\\Domain\\Adopters.cs",
-              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\Domain\\Adopters.cs",
-              "RelativeToolTip": "FurEverHomes\\Models\\Domain\\Adopters.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
+              "Title": "ApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Controllers\\ApplicationService.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Controllers\\ApplicationService.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Controllers\\ApplicationService.cs",
+              "RelativeToolTip": "FurEverHomes\\Controllers\\ApplicationService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAowC0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T06:40:54.368Z"
+              "WhenOpened": "2024-07-19T08:41:54.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationController.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Controllers\\ApplicationController.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Controllers\\ApplicationController.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Controllers\\ApplicationController.cs",
+              "RelativeToolTip": "FurEverHomes\\Controllers\\ApplicationController.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAowLYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T08:41:08.164Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Program.cs",
-              "RelativeDocumentMoniker": "FurEverHomes\\Program.cs",
-              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Program.cs",
-              "RelativeToolTip": "FurEverHomes\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T05:09:56.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Application.cs",
               "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\Domain\\Application.cs",
               "RelativeDocumentMoniker": "FurEverHomes\\Models\\Domain\\Application.cs",
               "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\Domain\\Application.cs",
               "RelativeToolTip": "FurEverHomes\\Models\\Domain\\Application.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwA8AAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T03:27:09.713Z"
+              "WhenOpened": "2024-07-19T08:30:26.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdoptersDto.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
+              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\AdoptersDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T08:26:01.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\ApplicationResponseDto.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\ApplicationResponseDto.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\ApplicationResponseDto.cs",
+              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\ApplicationResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T08:24:47.579Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -160,21 +162,75 @@
               "RelativeDocumentMoniker": "FurEverHomes\\Models\\Domain\\Pets.cs",
               "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\Domain\\Pets.cs",
               "RelativeToolTip": "FurEverHomes\\Models\\Domain\\Pets.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBIAAAAuAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T03:18:50.885Z"
+              "WhenOpened": "2024-07-19T08:23:37.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "PetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\PetDto.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\PetDto.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\PetDto.cs",
+              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\PetDto.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwCUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T08:23:12.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Shelter.cs",
               "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\Domain\\Shelter.cs",
               "RelativeDocumentMoniker": "FurEverHomes\\Models\\Domain\\Shelter.cs",
               "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\Domain\\Shelter.cs",
               "RelativeToolTip": "FurEverHomes\\Models\\Domain\\Shelter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T03:03:52.105Z"
+              "WhenOpened": "2024-07-19T08:22:30.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ShelterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\ShelterDto.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\ShelterDto.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\ShelterDto.cs",
+              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\ShelterDto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T08:22:21.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\ApplicationDto.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Models\\DTO\\ApplicationDto.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Models\\DTO\\ApplicationDto.cs",
+              "RelativeToolTip": "FurEverHomes\\Models\\DTO\\ApplicationDto.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T08:21:53.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DtoMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Mappings\\DtoMapping.cs",
+              "RelativeDocumentMoniker": "FurEverHomes\\Mappings\\DtoMapping.cs",
+              "ToolTip": "C:\\Users\\Boot Camp\\Downloads\\FurEverHomes\\FurEverHomes\\FurEverHomes\\Mappings\\DtoMapping.cs",
+              "RelativeToolTip": "FurEverHomes\\Mappings\\DtoMapping.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T08:18:17.635Z",
+              "EditorCaption": ""
             }
           ]
         }

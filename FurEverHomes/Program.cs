@@ -1,4 +1,5 @@
 using FurEverHomes.Data;
+using FurEverHomes.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,9 @@ builder.Services.AddDbContext<AdoptionDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+// Register AutoMapper
+builder.Services.AddAutoMapper(typeof(DtoMapping));
 
 var app = builder.Build();
 

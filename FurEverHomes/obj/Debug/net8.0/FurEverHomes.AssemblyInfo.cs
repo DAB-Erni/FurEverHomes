@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FurEverHomes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87e8b9eff49861808f77f5d500ba5b9ca5581fad")]
 [assembly: System.Reflection.AssemblyProductAttribute("FurEverHomes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FurEverHomes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FurEverHomes.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class FixedEntities : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,64 +15,63 @@ namespace FurEverHomes.Migrations
                 name: "Adopters",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    AdopterId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    AdopterFirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdopterLastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdopterEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdopterPhone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdopterAddress = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Adopters", x => x.Id);
+                    table.PrimaryKey("PK_Adopters", x => x.AdopterId);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Shelter",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    ShelterId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ShelterName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ShelterEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ShelterPhone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ShelterAddress = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Shelter", x => x.Id);
+                    table.PrimaryKey("PK_Shelter", x => x.ShelterId);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Pets",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    PetId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Species = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Breed = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    HealthStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Age = table.Column<int>(type: "int", nullable: false),
-                    AdoptersId = table.Column<int>(type: "int", nullable: false),
+                    PetName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PetSpecies = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PetBreed = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PetGender = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PetHealthStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PetAge = table.Column<int>(type: "int", nullable: false),
+                    AdopterId = table.Column<int>(type: "int", nullable: true),
                     ShelterId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pets", x => x.Id);
+                    table.PrimaryKey("PK_Pets", x => x.PetId);
                     table.ForeignKey(
-                        name: "FK_Pets_Adopters_AdoptersId",
-                        column: x => x.AdoptersId,
+                        name: "FK_Pets_Adopters_AdopterId",
+                        column: x => x.AdopterId,
                         principalTable: "Adopters",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "AdopterId");
                     table.ForeignKey(
                         name: "FK_Pets_Shelter_ShelterId",
                         column: x => x.ShelterId,
                         principalTable: "Shelter",
-                        principalColumn: "Id",
+                        principalColumn: "ShelterId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -80,45 +79,45 @@ namespace FurEverHomes.Migrations
                 name: "Application",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    ApplicationId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false),
+                    ApplicationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AdoptersId = table.Column<int>(type: "int", nullable: false),
+                    AdopterId = table.Column<int>(type: "int", nullable: false),
                     ShelterId = table.Column<int>(type: "int", nullable: false),
-                    PetsId = table.Column<int>(type: "int", nullable: true)
+                    PetId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Application", x => x.Id);
+                    table.PrimaryKey("PK_Application", x => x.ApplicationId);
                     table.ForeignKey(
-                        name: "FK_Application_Adopters_AdoptersId",
-                        column: x => x.AdoptersId,
+                        name: "FK_Application_Adopters_AdopterId",
+                        column: x => x.AdopterId,
                         principalTable: "Adopters",
-                        principalColumn: "Id",
+                        principalColumn: "AdopterId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Application_Pets_PetsId",
-                        column: x => x.PetsId,
+                        name: "FK_Application_Pets_PetId",
+                        column: x => x.PetId,
                         principalTable: "Pets",
-                        principalColumn: "Id");
+                        principalColumn: "PetId");
                     table.ForeignKey(
                         name: "FK_Application_Shelter_ShelterId",
                         column: x => x.ShelterId,
                         principalTable: "Shelter",
-                        principalColumn: "Id",
+                        principalColumn: "ShelterId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Application_AdoptersId",
+                name: "IX_Application_AdopterId",
                 table: "Application",
-                column: "AdoptersId");
+                column: "AdopterId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Application_PetsId",
+                name: "IX_Application_PetId",
                 table: "Application",
-                column: "PetsId");
+                column: "PetId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Application_ShelterId",
@@ -126,9 +125,9 @@ namespace FurEverHomes.Migrations
                 column: "ShelterId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Pets_AdoptersId",
+                name: "IX_Pets_AdopterId",
                 table: "Pets",
-                column: "AdoptersId");
+                column: "AdopterId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Pets_ShelterId",
