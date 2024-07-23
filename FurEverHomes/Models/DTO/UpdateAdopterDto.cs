@@ -1,4 +1,6 @@
-﻿namespace FurEverHomes.Models
+﻿using System;
+
+namespace FurEverHomes.Models
 {
     public class UpdateAdopterDto
     {

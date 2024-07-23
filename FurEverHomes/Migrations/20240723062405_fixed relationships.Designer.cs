@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FurEverHomes.Migrations
 {
     [DbContext(typeof(AdoptionDbContext))]
-    [Migration("20240719074700_Fixed Entities")]
-    partial class FixedEntities
+    [Migration("20240723062405_fixed relationships")]
+    partial class fixedrelationships
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace FurEverHomes.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("FurEverHomes.Models.Domain.Adopters", b =>
+            modelBuilder.Entity("FurEverHomes.Models.Domain.Adopter", b =>
                 {
                     b.Property<int>("AdopterId")
                         .ValueGeneratedOnAdd()
@@ -66,7 +66,7 @@ namespace FurEverHomes.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ApplicationId"));
 
-                    b.Property<int>("AdopterId")
+                    b.Property<int?>("AdopterId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("ApplicationDate")
@@ -75,7 +75,7 @@ namespace FurEverHomes.Migrations
                     b.Property<int?>("PetId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ShelterId")
+                    b.Property<int?>("ShelterId")
                         .HasColumnType("int");
 
                     b.Property<string>("Status")
@@ -90,19 +90,16 @@ namespace FurEverHomes.Migrations
 
                     b.HasIndex("ShelterId");
 
-                    b.ToTable("Application");
+                    b.ToTable("Applications");
                 });
 
-            modelBuilder.Entity("FurEverHomes.Models.Domain.Pets", b =>
+            modelBuilder.Entity("FurEverHomes.Models.Domain.Pet", b =>
                 {
                     b.Property<int>("PetId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PetId"));
-
-                    b.Property<int?>("AdopterId")
-                        .HasColumnType("int");
 
                     b.Property<int>("PetAge")
                         .HasColumnType("int");
@@ -131,8 +128,6 @@ namespace FurEverHomes.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("PetId");
-
-                    b.HasIndex("AdopterId");
 
                     b.HasIndex("ShelterId");
 
@@ -165,56 +160,49 @@ namespace FurEverHomes.Migrations
 
                     b.HasKey("ShelterId");
 
-                    b.ToTable("Shelter");
+                    b.ToTable("Shelters");
                 });
 
             modelBuilder.Entity("FurEverHomes.Models.Domain.Application", b =>
                 {
-                    b.HasOne("FurEverHomes.Models.Domain.Adopters", "Adopter")
+                    b.HasOne("FurEverHomes.Models.Domain.Adopter", "Adopter")
                         .WithMany("Applications")
                         .HasForeignKey("AdopterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("FurEverHomes.Models.Domain.Pets", "Pet")
-                        .WithMany()
-                        .HasForeignKey("PetId");
-
-                    b.HasOne("FurEverHomes.Models.Domain.Shelter", "Shelter")
+                    b.HasOne("FurEverHomes.Models.Domain.Pet", "Pet")
                         .WithMany("Applications")
-                        .HasForeignKey("ShelterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PetId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("FurEverHomes.Models.Domain.Shelter", null)
+                        .WithMany("Applications")
+                        .HasForeignKey("ShelterId");
 
                     b.Navigation("Adopter");
 
                     b.Navigation("Pet");
-
-                    b.Navigation("Shelter");
                 });
 
-            modelBuilder.Entity("FurEverHomes.Models.Domain.Pets", b =>
+            modelBuilder.Entity("FurEverHomes.Models.Domain.Pet", b =>
                 {
-                    b.HasOne("FurEverHomes.Models.Domain.Adopters", "Adopter")
-                        .WithMany("Pets")
-                        .HasForeignKey("AdopterId");
-
                     b.HasOne("FurEverHomes.Models.Domain.Shelter", "Shelter")
                         .WithMany("Pets")
                         .HasForeignKey("ShelterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Adopter");
-
                     b.Navigation("Shelter");
                 });
 
-            modelBuilder.Entity("FurEverHomes.Models.Domain.Adopters", b =>
+            modelBuilder.Entity("FurEverHomes.Models.Domain.Adopter", b =>
                 {
                     b.Navigation("Applications");
+                });
 
-                    b.Navigation("Pets");
+            modelBuilder.Entity("FurEverHomes.Models.Domain.Pet", b =>
+                {
+                    b.Navigation("Applications");
                 });
 
             modelBuilder.Entity("FurEverHomes.Models.Domain.Shelter", b =>

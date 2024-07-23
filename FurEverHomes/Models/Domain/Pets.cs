@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace FurEverHomes.Models.Domain
 {
-    public class Pets
+    public class Pet
     {
         [Key]
         public int PetId { get; set; }
@@ -13,16 +14,14 @@ namespace FurEverHomes.Models.Domain
         public string PetGender { get; set; } = "";
         public string PetHealthStatus { get; set; } = "";
         public int PetAge { get; set; }
-
-        public int? AdopterId { get; set; } // Nullable if a pet might not have an adopter yet
+        
         public int ShelterId { get; set; }
 
         // Navigation properties
         [JsonIgnore]
-        public Adopters Adopter { get; set; }
+        public List<Application> Applications { get; set; } = new List<Application>();
 
         [JsonIgnore]
-        public Shelter Shelter { get; set; }
-
+        public Shelter? Shelter { get; set; }
     }
 }

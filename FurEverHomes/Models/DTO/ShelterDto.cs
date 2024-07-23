@@ -21,9 +21,11 @@ namespace FurEverHomes.Models.DTO
     public class ShelterDto
     {
         public int ShelterId { get; set; }
-        public string ShelterName { get; set; } = "";
-        public string ShelterEmail { get; set; } = "";
-        public string ShelterPhone { get; set; } = "";
-        public string ShelterAddress { get; set; } = "";
+        public string ShelterName { get; set; }
+        public string ShelterEmail { get; set; }
+        public string ShelterPhone { get; set; }
+        public string ShelterAddress { get; set; }
+        public List<int>? ApplicationIds { get; set; }
+        public List<int>? PetIds { get; set; }
     }
 }

@@ -19,12 +19,13 @@
 namespace FurEverHomes.Models.DTO
 {
     public class AdopterDto
-    {
-        public int AdopterId { get; set; }
-        public string AdopterFirstName { get; set; } = "";
-        public string AdopterLastName { get; set; } = "";
-        public string AdopterEmail { get; set; } = "";
-        public string AdopterPhone { get; set; } = "";
-        public string AdopterAddress { get; set; } = "";
-    }
+{
+    public int AdopterId { get; set; }
+    public string AdopterFirstName { get; set; }
+    public string AdopterLastName { get; set; }
+    public string AdopterEmail { get; set; }
+    public string AdopterPhone { get; set; }
+    public string AdopterAddress { get; set; }
+    public List<int>? ApplicationIds { get; set; }
+}
 }

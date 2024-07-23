@@ -123,9 +123,8 @@ namespace FurEverHomes.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var applications = await _context.Application
+            var applications = await _context.Applications
                 .Include(a => a.Adopter)
-                .Include(a => a.Shelter)
                 .Include(a => a.Pet)
                 .ToListAsync();
 
@@ -136,9 +135,8 @@ namespace FurEverHomes.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ApplicationDto>> GetApplication(int id)
         {
-            var application = await _context.Application
+            var application = await _context.Applications
                 .Include(a => a.Adopter)
-                .Include(a => a.Shelter)
                 .Include(a => a.Pet)
                 .FirstOrDefaultAsync(a => a.ApplicationId == id);
 
@@ -157,12 +155,11 @@ namespace FurEverHomes.Controllers
             var application = _mapper.Map<Application>(addApplicationRequestDto);
 
             // Save application to the database
-            _context.Application.Add(application);
+            _context.Applications.Add(application);
             await _context.SaveChangesAsync();
 
             // Load related data
             await _context.Entry(application).Reference(a => a.Adopter).LoadAsync();
-            await _context.Entry(application).Reference(a => a.Shelter).LoadAsync();
             await _context.Entry(application).Reference(a => a.Pet).LoadAsync();
 
             var applicationDto = _mapper.Map<ApplicationDto>(application);
@@ -172,9 +169,8 @@ namespace FurEverHomes.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateApplication(int id, UpdateApplicationRequestDto updateApplicationDto)
         {
-            var application = await _context.Application
+            var application = await _context.Applications
                 .Include(a => a.Adopter)
-                .Include(a => a.Shelter)
                 .Include(a => a.Pet)
                 .FirstOrDefaultAsync(a => a.ApplicationId == id);
 
@@ -183,26 +179,46 @@ namespace FurEverHomes.Controllers
                 return NotFound();
             }
 
+            // Check if the AdopterId exists
+            var adopterExists = await _context.Adopters.AnyAsync(a => a.AdopterId == updateApplicationDto.AdopterId);
+            if (!adopterExists)
+            {
+                return BadRequest($"Adopter with Id {updateApplicationDto.AdopterId} does not exist.");
+            }
+
+            // Check if the PetId exists
+            var petExists = await _context.Pets.AnyAsync(p => p.PetId == updateApplicationDto.PetId);
+            if (!petExists)
+            {
+                return BadRequest($"Pet with Id {updateApplicationDto.PetId} does not exist.");
+            }
+
             // Map the updated fields from the DTO to the existing entity
             _mapper.Map(updateApplicationDto, application);
-            _context.Entry(application).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
 
             // Load related data
             await _context.Entry(application).Reference(a => a.Adopter).LoadAsync();
-            await _context.Entry(application).Reference(a => a.Shelter).LoadAsync();
             await _context.Entry(application).Reference(a => a.Pet).LoadAsync();
 
             var applicationDto = _mapper.Map<ApplicationDto>(application);
             return Ok(applicationDto);
         }
 
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteApplication(int id)
         {
-            var application = await _context.Application
+            var application = await _context.Applications
                 .Include(a => a.Adopter)
-                .Include(a => a.Shelter)
                 .Include(a => a.Pet)
                 .FirstOrDefaultAsync(a => a.ApplicationId == id);
 
@@ -212,7 +228,7 @@ namespace FurEverHomes.Controllers
             }
 
             // Remove the application from the database
-            _context.Application.Remove(application);
+            _context.Applications.Remove(application);
             await _context.SaveChangesAsync();
 
             return NoContent();

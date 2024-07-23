@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace FurEverHomes.Models.Domain
@@ -13,11 +14,9 @@ namespace FurEverHomes.Models.Domain
         public string ShelterAddress { get; set; } = "";
 
         [JsonIgnore]
-        public ICollection<Application> Applications { get; set; } = new List<Application>();
+        public List<Application> Applications { get; set; } = new List<Application>();
 
         [JsonIgnore]
-        public ICollection<Pets> Pets { get; set; } = new List<Pets>();
-
+        public List<Pet> Pets { get; set; } = new List<Pet>();
     }
 }
-

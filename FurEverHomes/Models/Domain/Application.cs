@@ -1,5 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace FurEverHomes.Models.Domain
@@ -10,17 +11,16 @@ namespace FurEverHomes.Models.Domain
         public int ApplicationId { get; set; }
         public DateTime ApplicationDate { get; set; }
         public string Status { get; set; } = "";
-        public int AdopterId { get; set; }
-        public int ShelterId { get; set; }
+        public int? AdopterId { get; set; }
+        //public int? ShelterId { get; set; }
+
         public int? PetId { get; set; }
 
         [JsonIgnore]
-        public Adopters Adopter { get; set; }
+        public Adopter? Adopter { get; set; }
+
 
         [JsonIgnore]
-        public Shelter Shelter { get; set; }
-
-        [JsonIgnore]
-        public Pets? Pet { get; set; }
+        public Pet Pet { get; set; }
     }
 }

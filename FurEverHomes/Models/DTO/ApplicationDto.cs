@@ -30,9 +30,16 @@ namespace FurEverHomes.Models.DTO
     {
         public int ApplicationId { get; set; }
         public DateTime ApplicationDate { get; set; }
-        public string Status { get; set; } = "";
+        public string Status { get; set; }
+
+        // Simplified representations of related entities
+        public int? AdopterId { get; set; }
+        //public int? ShelterId { get; set; }
+        public int? PetId { get; set; }
+
+        // Optionally include detailed DTOs for related entities
         public AdopterDto Adopter { get; set; }
-        public ShelterDto Shelter { get; set; }
+        //public ShelterDto Shelter { get; set; }
         public PetDto Pet { get; set; }
     }
 }

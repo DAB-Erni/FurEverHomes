@@ -28,11 +28,17 @@ namespace FurEverHomes.Models.DTO
     public class PetDto
     {
         public int PetId { get; set; }
-        public string PetName { get; set; } = "";
-        public string PetSpecies { get; set; } = "";
-        public string PetBreed { get; set; } = "";
-        public string PetGender { get; set; } = "";
-        public string PetHealthStatus { get; set; } = "";
+        public string PetName { get; set; }
+        public string PetSpecies { get; set; }
+        public string PetBreed { get; set; }
+        public string PetGender { get; set; }
+        public string PetHealthStatus { get; set; }
         public int PetAge { get; set; }
+        //public int? ApplicationId { get; set; }
+        public int ShelterId { get; set; }
+
+        // Optionally, you can include simplified representations of related entities
+        // For example, a list of application IDs or a simplified ApplicationDto
+        public List<int>? ApplicationIds { get; set; } = new List<int>();
     }
 }

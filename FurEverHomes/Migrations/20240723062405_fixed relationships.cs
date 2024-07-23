@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FurEverHomes.Migrations
 {
     /// <inheritdoc />
-    public partial class FixedEntities : Migration
+    public partial class fixedrelationships : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -29,7 +29,7 @@ namespace FurEverHomes.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Shelter",
+                name: "Shelters",
                 columns: table => new
                 {
                     ShelterId = table.Column<int>(type: "int", nullable: false)
@@ -41,7 +41,7 @@ namespace FurEverHomes.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Shelter", x => x.ShelterId);
+                    table.PrimaryKey("PK_Shelters", x => x.ShelterId);
                 });
 
             migrationBuilder.CreateTable(
@@ -56,78 +56,67 @@ namespace FurEverHomes.Migrations
                     PetGender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PetHealthStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PetAge = table.Column<int>(type: "int", nullable: false),
-                    AdopterId = table.Column<int>(type: "int", nullable: true),
                     ShelterId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Pets", x => x.PetId);
                     table.ForeignKey(
-                        name: "FK_Pets_Adopters_AdopterId",
-                        column: x => x.AdopterId,
-                        principalTable: "Adopters",
-                        principalColumn: "AdopterId");
-                    table.ForeignKey(
-                        name: "FK_Pets_Shelter_ShelterId",
+                        name: "FK_Pets_Shelters_ShelterId",
                         column: x => x.ShelterId,
-                        principalTable: "Shelter",
+                        principalTable: "Shelters",
                         principalColumn: "ShelterId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Application",
+                name: "Applications",
                 columns: table => new
                 {
                     ApplicationId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ApplicationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AdopterId = table.Column<int>(type: "int", nullable: false),
-                    ShelterId = table.Column<int>(type: "int", nullable: false),
-                    PetId = table.Column<int>(type: "int", nullable: true)
+                    AdopterId = table.Column<int>(type: "int", nullable: true),
+                    PetId = table.Column<int>(type: "int", nullable: true),
+                    ShelterId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Application", x => x.ApplicationId);
+                    table.PrimaryKey("PK_Applications", x => x.ApplicationId);
                     table.ForeignKey(
-                        name: "FK_Application_Adopters_AdopterId",
+                        name: "FK_Applications_Adopters_AdopterId",
                         column: x => x.AdopterId,
                         principalTable: "Adopters",
                         principalColumn: "AdopterId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Application_Pets_PetId",
+                        name: "FK_Applications_Pets_PetId",
                         column: x => x.PetId,
                         principalTable: "Pets",
-                        principalColumn: "PetId");
-                    table.ForeignKey(
-                        name: "FK_Application_Shelter_ShelterId",
-                        column: x => x.ShelterId,
-                        principalTable: "Shelter",
-                        principalColumn: "ShelterId",
+                        principalColumn: "PetId",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Applications_Shelters_ShelterId",
+                        column: x => x.ShelterId,
+                        principalTable: "Shelters",
+                        principalColumn: "ShelterId");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Application_AdopterId",
-                table: "Application",
+                name: "IX_Applications_AdopterId",
+                table: "Applications",
                 column: "AdopterId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Application_PetId",
-                table: "Application",
+                name: "IX_Applications_PetId",
+                table: "Applications",
                 column: "PetId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Application_ShelterId",
-                table: "Application",
+                name: "IX_Applications_ShelterId",
+                table: "Applications",
                 column: "ShelterId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Pets_AdopterId",
-                table: "Pets",
-                column: "AdopterId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Pets_ShelterId",
@@ -139,16 +128,16 @@ namespace FurEverHomes.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Application");
-
-            migrationBuilder.DropTable(
-                name: "Pets");
+                name: "Applications");
 
             migrationBuilder.DropTable(
                 name: "Adopters");
 
             migrationBuilder.DropTable(
-                name: "Shelter");
+                name: "Pets");
+
+            migrationBuilder.DropTable(
+                name: "Shelters");
         }
     }
 }
